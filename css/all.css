@@ -1,15 +1,20 @@
 body { margin:0; padding:0; background:#BBD9EE; color:#000; font-family:arial,sans-serif; font-size:11px; }
 
 #crimson-form-wrapper ul {list-style: none; margin:0; padding:0}
-#crimson-form-wrapper input {margin-left: 5px; margin-right: 10px;}
-#crimson-form-wrapper select {margin-left: 5px; margin-right: 10px;}
+#crimson-form-wrapper input {margin-left: 5px; margin-right: 10px; margin-top: 5px;}
+#crimson-form-wrapper select {margin-left: 5px; margin-right: 10px; margin-top: 5px;}
 #center-column { float:left;width:750px; background:url(../img/bg-center-column.jpg) repeat-x left top; min-height:584px; padding:12px 16px 0 13px; border-radius: 1em;}	
 
 .top-bar { float:left; width:603px; padding:0 0 0 9px; margin:0 0 4px 0; }
 .top-bar h1 { font:20px/21px verdana,sans-serif; color:#43729F; margin:0 0 4px 0; }
 .top-bar a.button { float:right; display:block; width:75px; height:35px; text-align:center; color:#fff; text-transform:uppercase; font-weight:bold; line-height:27px; background:url(../img/bg-orange-button.gif) no-repeat; }
-/* main styles */
 
+#create_new_form{font-size: 1.2em;}
+
+.error {border: 3px solid red;}
+
+.select_wrapper input {display: inline-block;}
+/* OLD SYLES */
 form {
 	margin:0;
 	padding:0

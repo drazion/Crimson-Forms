@@ -70,7 +70,8 @@ class Crimson_forms extends CI_Controller {
 		$data['center_right'] = '';
 		$status_options = array('active' => "Active", 'inactive' => "Inactive");
 		$col_options = array('input' => "Input Area", 'select' => "Dropdown", 'textarea' => "Textarea", 'multiselect' => "Multiple Select", );
-		$data['intro_text'] = 'Add a Field<br/>' . form_dropdown('new_form_type', $col_options, 'input', 'style="margin-top: -9px;"') . "<img id=\"add-field\" src=" . base_url() . "img/plus_icon.png style=\"cursor: pointer;\">";
+		$data['intro_text'] = '<div style="float: right; margin-top: 5px;"><button id="create_new_form">Create Form</button></div>
+		Add a Field<br/>' . form_dropdown('new_form_type', $col_options, 'input', 'style="margin-top: -9px;"') . "<img id=\"add-field\" src=" . base_url() . "img/plus_icon.png style=\"cursor: pointer;\">";
 		$data['page_content'] = "<div id=\"crimson-form-wrapper\">".  
 		form_open('crimson_forms/submit_new_form') .
 		form_fieldset('Form Information') . 
@@ -82,7 +83,7 @@ class Crimson_forms extends CI_Controller {
 		form_fieldset('Form Fields') .
 		"<ul>" .
 		"<li>" . form_label('Name') .
-		form_input(array('name' => 'column1_name', 'max_length' => '100', 'style'=>'width: 300px'),'Submit', 'disabled=disabled') .
+		form_input(array('name' => 'column1_name', 'max_length' => '100', 'style'=>'width: 355px'),'Submit', 'disabled=disabled') .
 		form_label('Label') .
 		form_input(array('name' => 'column1_label', 'max_length' => '100', 'style'=>'width: 100px'), 'Submit Form') .
 		form_label('Status') . 
